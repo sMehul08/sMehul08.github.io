@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mehul Soni — Senior PHP Engineer</title>
+<title>Mehul Soni — Senior Software Engineer</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -294,8 +294,17 @@ footer a { color: var(--accent); text-decoration: none; }
 ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
 
 @media(max-width:720px){
-  .hero { grid-template-columns: 1fr; padding: 32px 28px; }
-  .profile-wrap { display: none; }
+  .hero { 
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 32px 28px;
+  }
+  .profile-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 24px;
+  }
   .stats-row { grid-template-columns: repeat(2,1fr); }
   nav { flex-direction: column; align-items: flex-start; gap: 12px; }
   .titem { grid-template-columns: 80px 1fr; gap: 12px; }
@@ -423,8 +432,9 @@ footer a { color: var(--accent); text-decoration: none; }
         <span class="chip"><i class="fab fa-css3-alt"></i> CSS</span>
         <span class="chip"><i class="fab fa-bootstrap"></i> Bootstrap</span>
         <span class="chip"><i class="fas fa-database"></i> MySQL / PostgreSQL</span>
-        <span class="chip"><i class="fab fa-git-alt"></i> Git / Bitbucket </span>
-        <span class="chip"><i class="fab fa-jira"></i> JIRA / Trello / Confluence </span>
+        <span class="chip"><i class="fab fa-git-alt"></i> Git  </span>
+        <span class="chip"><i class="fab fa-atlassian"></i> JIRA / Bitbucket / Confluence </span>
+        <span class="chip"><i class="fab fa-trello"></i> Agile Methodologies </span>
         <span class="chip"><i class="fab fa-github"></i> Github Copilot / Claude Code</span>
 
       </div>
@@ -589,7 +599,7 @@ footer a { color: var(--accent); text-decoration: none; }
 
   <footer>
     <p>&lt;?php echo 'Built with passion &amp; caffeine'; ?&gt;</p>
-    <p style="margin-top:8px;">Mehul Soni &mdash; Sr. Software Engineer (PHP) &mdash; Vadodara, India &mdash; 2026</p>
+    <p style="margin-top:8px;">Mehul Soni &mdash; Sr. Software Engineer &mdash; Vadodara, India &mdash; 2026</p>
   </footer>
 
 </div>
